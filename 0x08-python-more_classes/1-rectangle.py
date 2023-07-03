@@ -4,10 +4,7 @@
 
 
 class Rectangle:
-    """
-    Write a class Rectangle that defines a rectangle by:
-    (based on 0-rectangle.py)
-    """
+    """Write a class Rectangle that defines a rectangle by:(based on 0-rectangle.py)"""
 
     def __init__(self, width=0, height=0):
         """instanciate a class
@@ -26,7 +23,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         """to set it"""
-
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif (value < 0):
@@ -36,13 +32,11 @@ class Rectangle:
     @property
     def height(self):
         """to retrieve it"""
-
         return (self.__height)
 
     @height.setter
     def height(self, value):
         """to set it"""
-
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif (value < 0):
