@@ -1,11 +1,9 @@
 #!/usr/bin/python3
-
 """define rectangle 1"""
 
 
 class Rectangle:
-    """Write a class Rectangle that defines a rectangle by:(based on 0-rectangle.py)"""
-
+    """Write a class Rectangle that defines a rectangle"""
     def __init__(self, width=0, height=0):
         """instanciate a class
         Args:
@@ -41,7 +39,6 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif (value < 0):
             raise ValueError("height must be >= 0")
-
         self.__height = value
 
 
