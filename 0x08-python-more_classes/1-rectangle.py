@@ -7,15 +7,16 @@ class Rectangle:
     """
     Write a class Rectangle that defines a rectangle by:
     (based on 0-rectangle.py)
-    Args:
-        width (int): ...
-    Returns: Rectangle
     """
 
     def __init__(self, width=0, height=0):
-        """instanciate a class"""
-        self.__width = width
+        """instanciate a class
+        Args:
+            width (int): ...
+            height (int): ...
+        """
         self.__height = height
+        self.__width = width
 
     @property
     def width(self):
