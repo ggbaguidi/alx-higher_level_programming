@@ -3,9 +3,5 @@
 
 
 def lookup(obj):
-    """ A function lookup
-    Args:
-        obj (object):
-    Return: a list object
-    """
+    """ A function lookup Return: a list object"""
     return (dir(obj))
