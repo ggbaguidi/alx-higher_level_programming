@@ -13,8 +13,6 @@ class Base:
     def __init__(self, id=None):
         """instanciate a Base class"""
         if id is not None:
-            if id <= Base.__nb_objects:
-                raise ValueError("invalid id")
             self.id = id
         else:
             Base.__nb_objects += 1
