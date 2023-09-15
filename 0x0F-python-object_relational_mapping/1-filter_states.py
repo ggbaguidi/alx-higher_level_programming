@@ -17,7 +17,10 @@ if __name__ == "__main__":
                            passwd=mysql_password,
                            db=database_name)
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE states.name LIKE 'N%' ORDER BY states.id ASC")
+    cur.execute("SELECT * FROM states \
+                 WHERE name \
+                 LIKE 'N%' \
+                 ORDER BY states.id ASC")
     rows = cur.fetchall()
     for row in rows:
         print(row)
