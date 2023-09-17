@@ -13,12 +13,13 @@ if __name__ == "__main__":
     engine = create_engine('mysql+mysqldb://{}:{}@localhost/{}'.format(
         mysql_username,
         mysql_password,
-        database_name))
-    Base.metadata.create_all(engine)
+        database_name), pool_pre_ping=True)
     Session = sessionmaker(bind=engine)
     session = Session()
-    rows = session.execute("SELECT * FROM states\
-                            ORDER BY states.id ASC;")
-    for row in rows:
-        print(f'{row.id}: {row.name}')
+    Base.metadata.create_all(engine)
+    records = session.query(State).order_by(State.id)
+
+    for record in records:
+        print("{}: {}".format(record.id, record.name))
+
     session.close()
