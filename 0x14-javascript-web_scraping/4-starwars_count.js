@@ -15,7 +15,7 @@ request(url, (error, response, body) => {
   let wedgeCount = 0;
   for (const result of jsonBody.results) {
     for (const charURL of result.characters) {
-      if (charURL.includes(18)) {
+      if (charURL.split('/').includes('18')) {
         wedgeCount++;
       }
     }
