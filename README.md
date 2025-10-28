@@ -37,6 +37,8 @@ Structure
 - `0x06-python-classes/` — classes and objects.
 - (other folders follow the same pattern: each is an independent exercise set)
 
-If you plan to modify many files, open an issue or ask the repo owner before introducing cross-exercise refactors.
 
+## 👥 Authors
+
+- **Ahonakpon Guy Gbaguidi** - [guygbaguidi123root@gmail.com](mailto:guygbaguidi123root@gmail.com)
 ALX HIGHER LEVEL PROGRAMMING
